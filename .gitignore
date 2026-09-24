@@ -1,0 +1,20 @@
+# Secrets & config (never commit these)
+mcc_monitor.env
+chat_id.txt
+last_date.txt
+update_offset.txt
+
+# Logs
+mcc_monitor.log
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.venv_tts/
+
+# TTS voice models (binary; download separately)
+voices/
+
+# Test scripts
+dial_test.py
