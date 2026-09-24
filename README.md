@@ -1,5 +1,8 @@
 # MCC Machine Shift Monitor
 
+[![CI](https://github.com/mosesnetto/machine-monitor/actions/workflows/ci.yml/badge.svg)](https://github.com/mosesnetto/machine-monitor/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+
 Real-time machine downtime monitoring for a manufacturing line, running on a Raspberry Pi 5. It polls the MCC (Machine Condition/Control) API every minute, derives the current shift from IST, and alerts operators **on Telegram with a spoken voice message** — and can make a **real phone call** through a 4G cellular module (A7670E).
 
 ## Features
@@ -95,6 +98,11 @@ sudo systemctl restart mcc_monitor
 - Per-machine recipient routing
 - Web dashboard for downtime stats
 
+## Contributing
+
+Contributions are welcome — see [CONTRIBUTING.md](CONTRIBUTING.md) for the
+workflow and [SECURITY.md](SECURITY.md) for reporting vulnerabilities.
+
 ## License
 
-Proprietary — © 2026 Moses Netto. All rights reserved.
+[MIT](LICENSE) © 2026 Moses Netto.

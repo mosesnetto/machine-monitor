@@ -1,0 +1,26 @@
+name: Bug report
+description: Report a problem with the monitor
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: input
+    id: env
+    attributes:
+      label: Environment
+      description: Pi model / OS / Python version and service state
+      placeholder: "Raspberry Pi 5, Debian bookworm, Python 3.11"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: Describe the bug and expected behaviour
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Paste relevant output from `journalctl -u mcc_monitor` and/or mcc_monitor.log (redact secrets)
+      render: shell

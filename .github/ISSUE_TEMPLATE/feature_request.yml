@@ -1,0 +1,28 @@
+name: Feature request
+description: Suggest an improvement for the monitor
+title: "[Feature] "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like added?
+      description: Describe the feature or improvement
+    validations:
+      required: true
+  - type: textarea
+    id: usecase
+    attributes:
+      label: Why is it useful?
+      description: What workflow or operator problem does it solve?
+    validations:
+      required: true
+  - type: checkboxes
+    id: area
+    attributes:
+      label: Area (optional)
+      options:
+        - label: Monitoring / shift logic
+        - label: Notifications / calls
+        - label: 4G module recovery
+        - label: Deployment / docs
